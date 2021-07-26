@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iOS 15</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+  <style>
+    body {
+      background: white;
+    }
+    .frame {
+      width: 225px;
+      height: 525px;
+      background: black;
+      margin: 40px auto;
+      border-radius: 40px;
+      padding: 10px;
+    }
+
+    .container {
+      background: white;
+      width: 100%;
+      border-radius: 30px;
+      text-align: center;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      padding-top: 10px;
+    }
+
+    .heading {
+      padding-top: 40px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    .subtitle {
+      color: rgba(125, 125, 125);
+    }
+
+    .mode-name, p {
+      font-size: 12px;
+    }
+
+    .list {
+      padding: 20px 20px;
+    }
+
+
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgb(245, 245, 245);
+      color: rgb(128, 128, 128);
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 25px;
+    }
+
+    .blue-color {
+      color:rgb(73, 72, 212)
+    }
+    
+    .orange-color {
+      color:rgb(255, 137, 1)
+    }
+
+    .mode-name {
+      flex: 1;
+      color: rgb(61, 61, 61);
+    }
+
+    .top-frame {
+      background: rgb(206, 205, 212);
+      height: 10px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      width: calc(100% - 20px);
+      margin: 0 auto;
+    }
+
+    .body {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <div class="container">
+      <div class="top-frame"></div>
+      <div class="body">
+        <div class="heading">
+          <h1>What do you want <br> to focus on?</h1>
+          <p class="subtitle">Choose a Focus to get started</p>
+        </div>
+
+        <div class="list">
+          <div class="item">
+            <i class="fas fa-plus-circle"></i>
+            <div class="mode-name">Custom</div>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="item">
+            <i class="fas fa-car blue-color"></i>
+            <div class="mode-name">Driving</div>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="item">
+            <i class="fas fa-running orange-color"></i>
+            <div class="mode-name">Fitness</div>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="item">
+            <i class="fas fa-rocket blue-color"></i>
+            <div class="mode-name">Gaming</div>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="item">
+            <i class="fas fa-book orange-color"></i>
+            <div class="mode-name">Reading</div>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
