@@ -15,7 +15,7 @@
       background: white;
     }
     .frame {
-      width: 225px;
+      width: 305px;
       height: 525px;
       background: black;
       margin: 40px auto;
@@ -65,6 +65,7 @@
       padding: 15px;
       margin: 10px 0;
       border-radius: 25px;
+      animation: slideUp 0.5s ease-in-out;
     }
 
     .blue-color {
@@ -94,6 +95,35 @@
       border-top-right-radius: 10px;
       box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.4);
     }
+
+    @keyframes slideUp {
+      0% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+      
+      100% {
+        transform: translateY(0px);
+      }
+    }
+    .delay-1 {
+      animation-delay: 0.1s;
+    }
+    .delay-2 {
+      animation-delay: 0.2s;
+    }
+    .delay-3 {
+      animation-delay: 0.3s;
+    }
+    .delay-4 {
+      animation-delay: 0.4s;
+    }
+    .delay-5 {
+      animation-delay: 0.5s;
+    }
   </style>
 </head>
 <body>
@@ -112,22 +142,22 @@
             <div class="mode-name">Custom</div>
             <i class="fas fa-chevron-right"></i>
           </div>
-          <div class="item">
+          <div class="item delay-1">
             <i class="fas fa-car blue-color"></i>
             <div class="mode-name">Driving</div>
             <i class="fas fa-chevron-right"></i>
           </div>
-          <div class="item">
+          <div class="item delay-2">
             <i class="fas fa-running orange-color"></i>
             <div class="mode-name">Fitness</div>
             <i class="fas fa-chevron-right"></i>
           </div>
-          <div class="item">
+          <div class="item delay-3">
             <i class="fas fa-rocket blue-color"></i>
             <div class="mode-name">Gaming</div>
             <i class="fas fa-chevron-right"></i>
           </div>
-          <div class="item">
+          <div class="item delay-4">
             <i class="fas fa-book orange-color"></i>
             <div class="mode-name">Reading</div>
             <i class="fas fa-chevron-right"></i>
